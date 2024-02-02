@@ -2,7 +2,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
-import { deleteContact } from '../contactsSlice';
+import { deleteContact } from '../redux/contactsSlice';
 
 const List = styled.ul`
   list-style: none;

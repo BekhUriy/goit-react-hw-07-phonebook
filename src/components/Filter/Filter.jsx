@@ -2,7 +2,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
-import { setFilter } from '../contactsSlice';
+import { setFilter } from '../redux/contactsSlice';
 
 const FilterContainer = styled.div`
   margin-bottom: 20px;

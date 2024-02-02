@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import shortid from 'shortid';
-import { addContact } from '../contactsSlice';
+import { addContact } from '../redux/contactsSlice';
 
 const Form = styled.form`
   display: flex;

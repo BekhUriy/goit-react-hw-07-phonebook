@@ -9,7 +9,7 @@ import {
   addContact,
   deleteContact,
   setFilter,
-} from './contactsSlice';
+} from './redux/contactsSlice';
 
 const Heading = styled.h1`
   font-size: 2em;
