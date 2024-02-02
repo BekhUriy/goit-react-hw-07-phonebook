@@ -6,7 +6,7 @@ export const fetchContacts = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const response = await fetch(
-        'https://65bae1c9b4d53c066553ad7f.mockapi.io/contacts'
+        'https://65bae1c9b4d53c066553ad7f.mockapi.io/api/contacts/contacts'
       );
       if (!response.ok) {
         throw new Error('Failed to fetch contacts');
@@ -26,7 +26,7 @@ export const addContact = createAsyncThunk(
   async ({ name, number }, { rejectWithValue, dispatch }) => {
     try {
       const response = await fetch(
-        'https://65bae1c9b4d53c066553ad7f.mockapi.io/contacts',
+        'https://65bae1c9b4d53c066553ad7f.mockapi.io/api/contacts/contacts',
         {
           method: 'POST',
           headers: {
@@ -55,7 +55,7 @@ export const deleteContact = createAsyncThunk(
   async (contactId, { rejectWithValue, dispatch }) => {
     try {
       const response = await fetch(
-        `https://65bae1c9b4d53c066553ad7f.mockapi.io/contacts/${contactId}`,
+        `https://65bae1c9b4d53c066553ad7f.mockapi.io/api/contacts/contacts/${contactId}`,
         {
           method: 'DELETE',
         }
